@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "external_posts",
+  "info": {
+    "singularName": "external-post",
+    "pluralName": "external-posts",
+    "displayName": "External Post"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Source": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "string",
+      "required": true
+    },
+    "PreviewImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "PublicationDate": {
+      "type": "date"
+    }
+  }
+}

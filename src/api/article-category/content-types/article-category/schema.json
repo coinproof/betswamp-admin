@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_categories",
+  "info": {
+    "singularName": "article-category",
+    "pluralName": "article-categories",
+    "displayName": "ArticleCategory"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "in_house_articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::in-house-article.in-house-article",
+      "mappedBy": "article_categories"
+    }
+  }
+}

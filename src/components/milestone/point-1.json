@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_milestone_point_1s",
+  "info": {
+    "displayName": "Point 1",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "Points": {
+      "type": "string"
+    }
+  }
+}

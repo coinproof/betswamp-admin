@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "in_house_articles",
+  "info": {
+    "singularName": "in-house-article",
+    "pluralName": "in-house-articles",
+    "displayName": "InHouseArticle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "PreviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ArticleBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "article_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article-category.article-category",
+      "inversedBy": "in_house_articles"
+    },
+    "Keywords": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
